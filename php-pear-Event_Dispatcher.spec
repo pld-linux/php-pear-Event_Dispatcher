@@ -4,8 +4,8 @@
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
 
-Summary:	%{_pearname} - Dispatch notifications using PHP callbacks
-#Summary(pl):	%{_pearname} -
+Summary:	%{_pearname} - dispatch notifications using PHP callbacks
+Summary(pl):	%{_pearname} - przekazywanie powiadomieñ za po¶rednictwem callbacków PHP
 Name:		php-pear-%{_pearname}
 Version:	0.9.1
 Release:	1
@@ -31,10 +31,17 @@ passing the notification as the sole argument.
 
 In PEAR status of this package is: %{_status}.
 
-#%description -l pl
-#...
-#
-#Ta klasa ma w PEAR status: %{_status}.
+%description -l pl
+Event_Dispatcher dzia³a jako tabela przekazywania powiadomieñ. S³u¿y
+do powiadamiania innych obiektów o interesuj±cych rzeczach. Informacje
+te s± opakowywane w obiekty Event_Notification. Obiekty klienckie
+rejestruj± siê w klasie Event_Dispatcher jako obserwatorzy konkretnych
+powiadomieñ wysy³anych przez inne obiekty. Kiedy zachodzi zdarzenie,
+obiekt wysy³a odpowiednie powiadomienie do klasy Event_Dispatcher.
+Event_Dispatcher przekazuje tê wiadomo¶æ do ka¿dego zarejestrowanego
+obserwatora, przekazuj±c powiadomienie jako jedyny argument.
+
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
