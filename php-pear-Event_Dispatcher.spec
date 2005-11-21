@@ -1,19 +1,19 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		Event
 %define		_subclass	Dispatcher
-%define		_status		beta
+%define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - dispatch notifications using PHP callbacks
 Summary(pl):	%{_pearname} - przekazywanie powiadomieñ za po¶rednictwem callbacków PHP
 Name:		php-pear-%{_pearname}
-Version:	0.9.1
-Release:	2
+Version:	1.0.0
+Release:	1
 Epoch:		0
 License:	BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	975cab848349c5e190ff773b107796c0
+# Source0-md5:	0364b1bde5cbe770be9deb0a96cba6e2
 URL:		http://pear.php.net/package/Event_Dispatcher/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
